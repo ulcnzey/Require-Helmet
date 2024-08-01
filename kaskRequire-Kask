@@ -1,0 +1,11 @@
+const helmet = require('helmet');
+const express = require('express');
+const app = express();
+
+app.use(helmet());
+
+// Diğer Express orta katmanları ve yönlendirmelerin
+
+app.listen(3000, () => {
+  console.log('Uygulama 3000 numaralı portta çalışıyor');
+});
